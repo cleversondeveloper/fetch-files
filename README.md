@@ -15,16 +15,15 @@ Is required: vars/paths.yaml
 
 ```yaml
   paths:
-  name_1:
-    folder_save: name_1
-    src: /location/get/file
+    name_1:
+      folder_save: name_1
+      src: /location/get/file
+      logs_name: [ name_file_1, name_file_2 ]
+    name_2:
+      folder_save: name_2
+      src: /other/location/get/file
+      logs_name: [ other_name_file_1, other_name_file_2 ]
     dest: /host/location/save/path
-    logs_name: [ name_file_1, name_file_2 ]
-  name_2:
-    folder_save: name_2
-    src: /other/location/get/file
-    dest: /host/other/location/save/path
-    logs_name: [ other_name_file_1, other_name_file_2 ]
 ```
 
 Dependencies
