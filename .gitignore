@@ -1,0 +1,21 @@
+# Git Ignore File - Add whatever is needed here
+
+# Mac Files
+.DS_Store
+
+# Ansible Retry Files
+*.retry
+
+# Ansible Vault Password file
+.vault_pass
+
+# Vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history
