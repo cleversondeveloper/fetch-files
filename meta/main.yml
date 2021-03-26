@@ -1,0 +1,20 @@
+galaxy_info:
+  author: Antonio Cleverson
+  description: Fetch files
+  company: Cleverson Software
+
+  license: GNU General Public License v3.0
+
+  min_ansible_version: 2.9
+
+  platforms:
+  - name: GenericLinux
+    versions:
+      - any
+
+  galaxy_tags:
+    - linux
+    - system
+    - server
+    - log
+ 

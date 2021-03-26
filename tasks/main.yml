@@ -1,0 +1,16 @@
+---
+# tasks file for fetch-files
+
+- name: Include paths_log variable
+  include_vars:
+    dir: vars
+    files_matching: paths.yaml
+
+- name: Download files of log
+  fetch:
+    src: "{{ item[0].src }}/{{ item[1] }}.log"
+    dest: "{{ dest }}/{{ item[0].folder_save }}/"
+    flat: yes
+  with_subelements:
+    - "{{ paths }}"
+    - logs_name
